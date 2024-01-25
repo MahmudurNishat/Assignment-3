@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏒HockeyHut🏒</title>
+    <!-- ===========================   Font Awesome  Link Start ============================== -->
+    <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome"
+        href="/css/app-wa-612dd696ed96d6777d290343ca9cef9d.css?vsn=d">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-thin.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css">
+    <!-- ===========================   Font Awesome-Link End ============================== -->
+
+    <!-- ===========================   Google Font-Link Start ============================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- ===========================   Google Font-Link End ============================== -->
+
+    <!-- =========================== DaisyUi and Tailwind CDN Link Start ============================== -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- =========================== DaisyUi and Tailwind CDN Link end ============================== -->
+
+    <!-- =========================== Style Part Start Here ========================================== -->
+    <style>
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+
+        img {
+            cursor: pointer;
+        }
+    </style>
+    <!-- =========================== Style Part End Here ============================================= -->
+</head>
+
+<body class="font-manrope">
+    <!-- =========================== Header Part Start Here ========================================== -->
+    <header>
+
+        <!-- =================== nav part start here ==================== -->
+        <div class="Navs mt-4 md:px-0 bg-red-500">
+            <div class="container mx-auto">
+                <div class="navbar bg-orange-500 ">
+                    <div class="navbar-start">
+                        <div class="dropdown">
+                            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </div>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                                <li><a
+                                        class="text-base font-normal text-[#FF4240] hover:text-[#FF4240] duration-300">Home</a>
+                                </li>
+                                <li><a
+                                        class="text-base font-normal text-[#424247] hover:text-[#FF4240] duration-300">About</a>
+                                </li>
+                                <li><a
+                                        class="text-base font-normal text-[#424247] hover:text-[#FF4240] duration-300">Pages</a>
+                                </li>
+                                <li><a
+                                        class="text-base font-normal text-[#424247] hover:text-[#FF4240] duration-300">Blog</a>
+                                </li>
+                                <li><a
+                                        class="text-base font-normal text-[#424247] hover:text-[#FF4240] duration-300">Contact</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <a class=""><img src="./img/Hockey’s.png" alt="" class="w-[70%] lg:w-full"></a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1 ">
+                            <li><a
+                                    class="text-base font-normal text-[#FF4240] hover:text-[#FF4240] duration-300">Home</a>
+                            </li>
+                            <li><a
+                                    class="text-base font-normal text-[#424247] hover:text-[#FF4240] duration-300">About</a>
+                            </li>
+                            <li><a
+                                    class="text-base font-normal text-[#424247] hover:text-[#FF4240] duration-300">Pages</a>
+                            </li>
+                            <li><a
+                                    class="text-base font-normal text-[#424247] hover:text-[#FF4240] duration-300">Blog</a>
+                            </li>
+                            <li><a
+                                    class="text-base font-normal text-[#424247] hover:text-[#FF4240] duration-300">Contact</a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                    <div class="navbar-end  ">
+                        <a href="#"><i class="fa-light fa-magnifying-glass text-xl " style="color: #89898b;"></i></a>
+                        <a
+                            class="btn text-white text-xl font-bold  bg-[#FF4240] border-[#FF4240] ml-2 lg:ml-6 hover:text-black duration-300">Get
+                            Ticket</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- =================== nav part end here ==================== -->
+
+
+        <!-- =================== banner part start here ==================== -->
+        <div class="banner px-5 mt-1 md:px-0  pt-8">
+            <div class="container mx-auto">
+                <div class="carousel w-full">
+                    <!-- Slide 1 start -->
+                    <div id="slide1"
+                        class="carousel-item relative w-full bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./img/mainB.png)] bg-cover bg-center  rounded-2xl">
+                        <!-- badge start -->
+                        <div
+                            class=" p-4  xl:p-8 bg-[#131318] rounded-2xl  flex flex-col items-start absolute lg:top-[60%] lg:right-8 lg:w-[50%] top-[100%] mt-4">
+
+                            <h2 class="text-white text-sm sm:text-2xl font-extrabold mb-4 ">Meet all the heroes
+                                from
+                                the
+                                field</h2>
+                            <p class="text-[#FFFFFF99] text-base font-medium xl:w-[80%]">Skate into
+                                savings with
+                                hockey heroes! Goals met, gear on point, prices
+                                slashed—your winning lineup awaits.</p>
+
+                        </div>
+                        <!-- badge end -->
+
+                        <div
+                            class="absolute flex justify-between transform -translate-y-1/2 sm:left-5 left-[30%] right-20 top-[80%] sm:right-[88%] sm:top-[90%] sm:gap-3 lg:gap-0">
+                            <a href="#slide4"
+                                class="btn btn-circle bg-black text-white border-black hover:text-black hover:border-black">❮</a>
+                            <a href="#slide2"
+                                class="btn btn-circle bg-black text-white border-black hover:text-black hover:border-black">❯</a>
+                        </div>
+                    </div>
+                    <!-- Slide 1 end -->
+
+                    <!-- Slide 2 start -->
+                    <div id="slide2"
+                        class="carousel-item relative w-full bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./img/one.jpg)] bg-cover bg-center  h-[80vh] rounded-2xl">
+
+                        <!-- badge start -->
+                        <div
+                            class=" p-4  xl:p-8 bg-[#131318] rounded-2xl  flex flex-col items-start absolute lg:top-[60%] lg:right-8 lg:w-[50%] top-[100%] mt-4">
+
+                            <h2 class="text-white text-sm sm:text-2xl font-extrabold mb-4 ">Meet all the heroes
+                                from
+                                the
+                                field</h2>
+                            <p class="text-[#FFFFFF99] text-base font-medium xl:w-[80%]">Skate into
+                                savings with
+                                hockey heroes! Goals met, gear on point, prices
+                                slashed—your winning lineup awaits.</p>
+
+                        </div>
+                        <!-- badge end -->
+
+                        <div
+                            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-[88%] top-[90%]">
+                            <a href="#slide1"
+                                class="btn btn-circle bg-black text-white border-black hover:text-black hover:border-black ">❮</a>
+                            <a href="#slide3"
+                                class="btn btn-circle bg-black text-white border-black hover:text-black hover:border-black">❯</a>
+                        </div>
+                    </div>
+                    <!-- Slide 2 end -->
+
+                    <!-- Slide 3 start -->
+                    <div id="slide3"
+                        class="carousel-item relative w-full bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./img/two.jpg)] bg-cover bg-center  h-[80vh] rounded-2xl">
+
+                        <!-- badge start -->
+                        <div
+                            class=" p-4  xl:p-8 bg-[#131318] rounded-2xl  flex flex-col items-start absolute lg:top-[60%] lg:right-8 lg:w-[50%] top-[100%] mt-4">
+
+                            <h2 class="text-white text-sm sm:text-2xl font-extrabold mb-4 ">Meet all the heroes
+                                from
+                                the
+                                field</h2>
+                            <p class="text-[#FFFFFF99] text-base font-medium xl:w-[80%]">Skate into
+                                savings with
+                                hockey heroes! Goals met, gear on point, prices
+                                slashed—your winning lineup awaits.</p>
+
+                        </div>
+                        <!-- badge end -->
+
+                        <div
+                            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-[88%] top-[90%]">
+                            <a href="#slide2"
+                                class="btn btn-circle bg-black text-white border-black hover:text-black hover:border-black">❮</a>
+                            <a href="#slide4"
+                                class="btn btn-circle bg-black text-white border-black hover:text-black hover:border-black">❯</a>
+                        </div>
+                    </div>
+                    <!-- Slide 3 end -->
+
+                    <!-- Slide 4 start -->
+
+                    <div id="slide4"
+                        class="carousel-item relative w-full bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./img/five.jpg)] bg-cover bg-center  h-[80vh] rounded-2xl">
+
+                        <!-- badge start -->
+                        <div
+                            class=" p-4  xl:p-8 bg-[#131318] rounded-2xl  flex flex-col items-start absolute lg:top-[60%] lg:right-8 lg:w-[50%] top-[100%] mt-4">
+
+                            <h2 class="text-white text-sm sm:text-2xl font-extrabold mb-4 ">Meet all the heroes
+                                from
+                                the
+                                field</h2>
+                            <p class="text-[#FFFFFF99] text-base font-medium xl:w-[80%]">Skate into
+                                savings with
+                                hockey heroes! Goals met, gear on point, prices
+                                slashed—your winning lineup awaits.</p>
+
+                        </div>
+                        <!-- badge end -->
+
+                        <div
+                            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-[88%] top-[90%]">
+                            <a href="#slide3"
+                                class="btn btn-circle bg-black text-white border-black hover:text-black hover:border-black">❮</a>
+                            <a href="#slide1"
+                                class="btn btn-circle bg-black text-white border-black hover:text-black hover:border-black">❯</a>
+                        </div>
+                    </div>
+                    <!-- Slide 4 end -->
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+        <!-- =================== banner part end here ==================== -->
+    </header>
+
+    <!-- =========================== Header Part End Here ============================================= -->
+
+
+    <!-- =========================== Main Part Start Here ============================================= -->
+    <main>
+        <!-- =================== Client section Start here ==================== -->
+        <section class="HockeyClub px-5 mt-8 md:px-0  pt-8">
+            <div class="container mx-auto">
+                <!--  section title start -->
+                <div
+                    class="fromHeadingText text-center flex flex-col justify-center items-center  border-t border-b border-dashed border-[#13131833] mb-10">
+                    <h2 class=" text-xl sm:text-4xl font-extrabold text-[#131318] mt-8">Professional Hockeys Club</h2>
+                    <p class="text-sm sm:text-base font-medium text-[#13131899] md:w-1/2 mb-8 mt-6">Elite professionals
+                        unite at our hockey club, forging a legacy through skill, teamwork, and unwavering dedication to
+                        excellence.</p>
+                </div>
+                <!--  section title end -->
+
+                <!-- radial progress start  -->
+                <div class="radial flex flex-col sm:flex sm:flex-row justify-around ">
+
+                    <div class="radiaLone flex flex-col text-center">
+                        <div class="radial-progress bg-white mx-auto" style="--value:87;color:#FF4240;"
+                            role="progressbar">87%
+                        </div>
+                        <h2 class="text-xl font-semibold text-[#131318] mt-6 mb-4">Prayer Facility</h2>
+                        <p class="text-base font-normal text-[#13131899] sm:w-[80%] mx-auto mb-5 sm:mb-0">Sacred space
+                            for
+                            reflection,
+                            serenity,
+                            and
+                            spiritual connection.</p>
+                    </div>
+                    <div class="radiaLone flex flex-col text-center">
+                        <div class="radial-progress bg-white mx-auto" style="--value:95;color: #49D293;"
+                            role="progressbar">95%
+                        </div>
+                        <h2 class="text-xl font-semibold text-[#131318] mt-6 mb-4">Experienced Coach</h2>
+                        <p class="text-base font-normal text-[#13131899] sm:w-[80%] mx-auto  mb-5 sm:mb-0">Blossoming
+                            journey, thriving with each enriching experience</p>
+                    </div>
+                    <div class="radiaLone flex flex-col text-center">
+                        <div class="radial-progress bg-white mx-auto" style="--value:87;color: #FFB546;"
+                            role="progressbar">90%
+                        </div>
+                        <h2 class="text-2xl font-semibold text-[#131318] mt-6 mb-4">Senior Player</h2>
+                        <p class="text-base font-normal text-[#13131899] sm:w-[80%] mx-auto  mb-5 sm:mb-0">Spiritual
+                            solace for seniors, a sanctuary of tranquility</p>
+                    </div>
+                    <div class="radiaLone flex flex-col text-center">
+                        <div class="radial-progress bg-white mx-auto" style="--value:80;color: #4C8DF1;"
+                            role="progressbar">80%
+                        </div>
+                        <h2 class="text-xl font-semibold text-[#131318] mt-6 mb-4">Training Ground</h2>
+                        <p class="text-base font-normal text-[#13131899] sm:w-[80%] mx-auto  mb-5 sm:mb-0">Fertile
+                            ground where skills blossom into expertise.</p>
+                    </div>
+
+                </div>
+                <!-- radial progress end  -->
+
+            </div>
+        </section>
+        <!-- =================== Client section end here ==================== -->
+
+        <!-- =================== Programme section Start here ==================== -->
+        <section class="Programme px-5 mt-8 md:px-0  pt-8 bg-white">
+            <div class="container mx-auto">
+                <!--  section title start -->
+                <div
+                    class="fromHeadingText text-center flex flex-col justify-center items-center  border-t border-b border-dashed border-[#13131833] mb-10">
+                    <h2 class=" text-2xl sm:text-4xl font-extrabold text-[#131318] mt-8">Program Sections</h2>
+                    <p class="text-sm sm:text-base font-medium text-[#13131899] md:w-1/2 mb-8 mt-6">Dive into our
+                        diverse program section—offering tailored experiences and expert guidance to unlock your full
+                        potential.</p>
+                </div>
+                <!--  section title end -->
+                <!-- imgBox part start-->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <div
+                        class="col-span-1 bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./img/First.png)] bg-cover bg-center pt-24 pb-10 pl-10 pr-8 rounded-2xl">
+                        <h2 class=" text-lg sm:text-3xl text-[#FFF] font-extrabold">Junior Program</h2>
+                        <p class="text-[#FFF] font-medium text-sm sm:text-base mt-4 mb-6 ">Discover our Hockey Junior
+                            Programme,
+                            fostering
+                            young talent in an
+                            exhilarating
+                            environment. Expert coaching, skill development, and team camaraderie propel aspiring
+                            juniors. – join the journey!</p>
+                        <button
+                            class=" py-3 px-6 rounded-lg border border-[#FF4240] bg-[#FF4240] text-white text-base sm:text-xl font-bold hover:text-[#FF4240] hover:bg-transparent duration-300">Register
+                            Now!</button>
+                    </div>
+                    <div
+                        class="col-span-1 bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./img/Second.png)] bg-cover bg-center  pt-24 pb-10 pl-10 pr-8 rounded-2xl">
+
+                        <h2 class="text-lg sm:text-3xl text-[#FFF] font-extrabold">Teenager Program</h2>
+                        <p class="text-[#FFF] font-medium text-sm sm:text-base mt-4 mb-6">Empower teenagers in our
+                            Hockey Teenager
+                            Program. Tailored training, mentorship, and a supportive community cultivate skills and
+                            passion on the ice. Elevate your game with us – join the journey!</p>
+                        <button
+                            class=" py-3 px-6 rounded-lg border border-[#FF4240] bg-[#FF4240] text-white text-base  sm:text-xl font-bold hover:text-[#FF4240] hover:bg-transparent duration-300">Register
+                            Now!</button>
+
+                    </div>
+                    <div
+                        class="col-span-1 lg:col-span-2 bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./img/M.png)] bg-cover bg-center  pt-52 pb-10 pl-10 pr-8 rounded-2xl">
+
+                        <h2 class="text-lg sm:text-3xl text-[#FFF] font-extrabold">Professional Program</h2>
+                        <p class="text-[#FFF] font-medium text-sm sm:text-base mt-4 mb-6 lg:w-[50%]">Elevate your game
+                            with our
+                            Professional Hockey Programme. Unparalleled training, strategic coaching, and a competitive
+                            atmosphere empower professionals to excel. Join a community dedicated to pushing the
+                            boundaries of excellence in hockey.</p>
+                        <button
+                            class=" py-3 px-6 rounded-lg border border-[#FF4240] bg-[#FF4240] text-white text-base   sm:text-xl font-bold hover:text-[#FF4240] hover:bg-transparent duration-300">Register
+                            Now!</button>
+                    </div>
+
+                </div>
+                <!-- imgBox part start-->
+
+            </div>
+        </section>
+        <!-- =================== Programme section end here ==================== -->
+        <!-- =================== Product section Start here ==================== -->
+        <section class="Product px-5 mt-8 md:px-0  pt-8 bg-white">
+            <div class="container mx-auto">
+                <!--  section title start -->
+                <div
+                    class="fromHeadingText text-center flex flex-col justify-center items-center  border-t border-b border-dashed border-[#13131833] mb-10">
+                    <h2 class=" text-2xl sm:text-4xl font-extrabold text-[#131318] mt-8">Our New Products</h2>
+                    <p class="text-sm sm:text-base font-medium text-[#13131899] md:w-1/2 mb-8 mt-6">Discover our newest
+                        product—crafted for reliability, user-friendly features, and a promise of quality, setting new
+                        standards.</p>
+                </div>
+                <!--  section title end -->
+
+                <!-- prduct box part start -->
+                <div class="flex flex-col lg:flex-row bg-white  gap-6">
+
+                    <!-- box left start -->
+                    <div class="BoxLeft flex flex-col w-full lg:w-[50%]   gap-6">
+
+                        <!-- box-1 start -->
+                        <div class="boxOne p-6 flex flex-col lg:flex-row gap-4 border border-[#1313181A] rounded-2xl">
+
+                            <div class="imgDiv w-full lg:w-[35%] ">
+                                <img src="img/shirt.png" alt="" class=" w-full">
+                            </div>
+
+                            <div class="content w-full lg:w-[55%] lg:space-y-4  ">
+                                <div class="rating">
+                                    <a href="#" class="font-medium text-base mr-4 text-[#13131880]"><i
+                                            class="fa-sharp fa-solid fa-star  mr-2" style="color: #f9980b;"></i>5.0</a>
+                                    <a href="#" class="font-medium text-base mr-4 text-[#13131880]"><i
+                                            class="fa-light fa-eye mr-2 text-[#13131880]"></i>20</a>
+                                    <a href="#" class="font-medium text-base mr-4 text-[#13131880]"><i
+                                            class="fa-thin fa-heart mr-2 text-[#13131880]"></i>200</a>
+
+                                </div>
+
+                                <h2 class=" text-lg sm:text-xl  font-extrabold text-[#131318] mt-3 mb-3">Jacket
+
+                                </h2>
+                                <p class="text-[#13131899] text-base sm:text-base font-medium">Warmth embraced,
+                                    down-filled shield against winter's icy breath and stylish!</p>
+
+                                <div class="price sm:flex sm:flex-row flex flex-col gap-5  mt-4">
+                                    <h4 class="text-[#FF4240] xl:text-lg lg:text-xs font-extrabold">Price - $22.00</h4>
+                                    <a href="#" class="text-[#13131880]  font-medium xl:text-base lg:text-xs"><i
+                                            class="fa-thin fa-cart-shopping mr-2" style="color: #89898b;"></i>Delivery
+                                        Fee : Free</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- box-1 end -->
+
+                        <!-- box-1 start -->
+                        <div class="boxOne p-6 flex flex-col lg:flex-row gap-4 border border-[#1313181A] rounded-2xl">
+
+                            <div class="imgDiv w-full lg:w-[35%] ">
+                                <img src="img/cap.png" alt="" class=" w-full">
+                            </div>
+
+                            <div class="content w-full lg:w-[55%] lg:space-y-4 ">
+                                <div class="rating">
+                                    <a href="#" class="font-medium text-base mr-4 text-[#13131880]"><i
+                                            class="fa-sharp fa-solid fa-star  mr-2" style="color: #f9980b;"></i>5.0</a>
+                                    <a href="#" class="font-medium text-base mr-4 text-[#13131880]"><i
+                                            class="fa-light fa-eye mr-2 text-[#13131880]"></i>20</a>
+                                    <a href="#" class="font-medium text-base mr-4 text-[#13131880]"><i
+                                            class="fa-thin fa-heart mr-2 text-[#13131880]"></i>201</a>
+
+                                </div>
+
+                                <h2 class=" text-lg sm:text-xl  font-extrabold text-[#131318] mt-3 mb-3">Cap For Hockeys
+                                </h2>
+                                <p class="text-[#13131899] text-base sm:text-base font-medium">Stylish headgear for
+                                    ultimate fan expression.Buy it Today!
+                                </p>
+
+                                <div class="price sm:flex sm:flex-row flex flex-col gap-5  mt-4">
+                                    <h4 class="text-[#FF4240] xl:text-lg lg:text-xs  font-extrabold">Price - $21.00</h4>
+                                    <a href="#" class="text-[#13131880]  font-medium xl:text-base lg:text-xs"><i
+                                            class="fa-thin fa-cart-shopping mr-2" style="color: #89898b;"></i>Delivery
+                                        Fee : Free</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- box-1 end -->
+
+                        <!-- box-1 start -->
+                        <div class="boxOne p-6 flex flex-col lg:flex-row gap-4 border border-[#1313181A] rounded-2xl">
+
+                            <div class="imgDiv w-full lg:w-[35%] ">
+                                <img src="img/helmet.png" alt="" class=" w-full">
+                            </div>
+
+                            <div class="content w-full lg:w-[55%] lg:space-y-4">
+                                <div class="rating">
+                                    <a href="#" class="font-medium text-base mr-4 text-[#13131880]"><i
+                                            class="fa-sharp fa-solid fa-star  mr-2" style="color: #f9980b;"></i>4.0</a>
+                                    <a href="#" class="font-medium text-base mr-4 text-[#13131880]"><i
+                                            class="fa-light fa-eye mr-2 text-[#13131880]"></i>18</a>
+                                    <a href="#" class="font-medium text-base mr-4 text-[#13131880]"><i
+                                            class="fa-thin fa-heart mr-2 text-[#13131880]"></i>202</a>
+
+                                </div>
+
+                                <h2 class=" text-lg sm:text-xl  font-extrabold text-[#131318] mt-3 mb-3 ">
+                                    Helmet
+
+                                </h2>
+                                <p class="text-[#13131899] text-base sm:text-base font-medium ">
+                                    Shop our reliable and
+                                    comfortable helmets for secure adventures
+                                </p>
+
+                                <div class="price sm:flex sm:flex-row flex flex-col gap-5  mt-4">
+                                    <h4 class="text-[#FF4240] xl:text-lg lg:text-xs  font-extrabold">Price - $20.00</h4>
+                                    <a href="#" class="text-[#13131880]  font-medium xl:text-base lg:text-xs"><i
+                                            class="fa-thin fa-cart-shopping mr-2" style="color: #89898b;"></i>Delivery
+                                        Fee : Free</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- box-1 end -->
+                    </div>
+                    <!-- box left end -->
+
+                    <!-- box right start -->
+                    <div class="BoxRight flex flex-col w-full lg:w-[50%]   gap-6">
+
+                        <!-- box-1 start -->
+                        <div class="boxOne p-6 flex flex-col lg:flex-row gap-4 border border-[#1313181A] rounded-2xl">
+
+                            <div class="imgDiv w-full lg:w-[35%] ">
+                                <img src="img/football.png" alt="" class=" w-full">
+                            </div>
+
+                            <div class="content w-full lg:w-[55%] lg:space-y-4 ">
+                                <div class="rating">
+                                    <a href="#" class="font-medium text-base mr-4 text-[#13131880]"><i
+                                            class="fa-sharp fa-solid fa-star  mr-2" style="color: #f9980b;"></i>5.0</a>
+                                    <a href="#" class="font-medium text-base mr-4 text-[#13131880]"><i
+                                            class="fa-light fa-eye mr-2 text-[#13131880]"></i>90</a>
+                                    <a href="#" class="font-medium text-base mr-4 text-[#13131880]"><i
+                                            class="fa-thin fa-heart mr-2 text-[#13131880]"></i>330</a>
+
+                                </div>
+
+                                <h2 class=" text-lg sm:text-xl  font-extrabold text-[#131318] mt-3 mb-3">World Cup Flags
+                                    Football
+
+                                </h2>
+                                <p class="text-[#13131899] text-base sm:text-base font-medium">Gear up for the game
+                                    online.Buy it To
+                                    our Exclusive offer!
+                                </p>
+
+                                <div class="price sm:flex sm:flex-row flex flex-col gap-5  mt-4">
+                                    <h4 class="text-[#FF4240]  font-extrabold xl:text-lg lg:text-xs">Price - $30.00</h4>
+                                    <a href="#" class="text-[#13131880]  font-medium xl:text-base lg:text-xs"><i
+                                            class="fa-thin fa-cart-shopping mr-2" style="color: #89898b;"></i>Delivery
+                                        Fee : Free</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- box-1 end -->
+
+                        <!-- box-1 start -->
+                        <div class="boxOne p-6 flex flex-col lg:flex-row gap-4 border border-[#1313181A] rounded-2xl">
+
+                            <div class="imgDiv w-full lg:w-[35%] lg:space-y-4">
+                                <img src="img/jersey.png" alt="" class=" w-full">
+                            </div>
+
+                            <div class="content w-full lg:w-[55%] ">
+                                <div class="rating">
+                                    <a href="#" class="font-medium text-base mr-4 text-[#13131880]"><i
+                                            class="fa-sharp fa-solid fa-star  mr-2" style="color: #f9980b;"></i>5.0</a>
+                                    <a href="#" class="font-medium text-base mr-4 text-[#13131880]"><i
+                                            class="fa-light fa-eye mr-2 text-[#13131880]"></i>199</a>
+                                    <a href="#" class="font-medium text-base mr-4 text-[#13131880]"><i
+                                            class="fa-thin fa-heart mr-2 text-[#13131880]"></i>300</a>
+
+                                </div>
+
+                                <h2 class=" text-lg sm:text-xl  font-extrabold text-[#131318] mt-3 mb-3">Football Jersey
+
+                                </h2>
+                                <p class="text-[#13131899] text-base sm:text-base font-medium">Score in style with our
+                                    premium
+                                    football jerseys online.
+                                </p>
+
+                                <div class="price sm:flex sm:flex-row flex flex-col gap-5  mt-4">
+                                    <h4 class="text-[#FF4240]  font-extrabold xl:text-lg lg:text-xs">Price - $25.00</h4>
+                                    <a href="#" class="text-[#13131880]  font-medium xl:text-base lg:text-xs"><i
+                                            class="fa-thin fa-cart-shopping mr-2" style="color: #89898b;"></i>Delivery
+                                        Fee : Free</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- box-1 end -->
+
+                        <!-- box-1 start -->
+                        <div class="boxOne p-6 flex flex-col lg:flex-row gap-4 border border-[#1313181A] rounded-2xl">
+
+                            <div class="imgDiv w-full lg:w-[35%] ">
+                                <img src="img/Asian.png" alt="" class=" w-full">
+                            </div>
+
+                            <div class="content w-full lg:w-[55%] lg:space-y-4 ">
+                                <div class="rating">
+                                    <a href="#" class="font-medium text-base mr-4 text-[#13131880]"><i
+                                            class="fa-sharp fa-solid fa-star  mr-2" style="color: #f9980b;"></i>4.0</a>
+                                    <a href="#" class="font-medium text-base mr-4 text-[#13131880]"><i
+                                            class="fa-light fa-eye mr-2 text-[#13131880]"></i>50</a>
+                                    <a href="#" class="font-medium text-base mr-4 text-[#13131880]"><i
+                                            class="fa-thin fa-heart mr-2 text-[#13131880]"></i>200</a>
+
+                                </div>
+
+                                <h2 class=" text-lg sm:text-xl  font-extrabold text-[#131318] mt-3 mb-3">Football
+
+                                </h2>
+                                <p class="text-[#13131899] text-base sm:text-base font-medium">Upgrade your game with
+                                    premium
+                                    football gear online.Buy it Today!
+                                </p>
+
+                                <div class="price sm:flex sm:flex-row flex flex-col gap-5  mt-4">
+                                    <h4 class="text-[#FF4240]  font-extrabold xl:text-lg lg:text-xs">Price - $15.00</h4>
+                                    <a href="#" class="text-[#13131880]  font-medium xl:text-base lg:text-xs"><i
+                                            class="fa-thin fa-cart-shopping mr-2" style="color: #89898b;"></i>Delivery
+                                        Fee : Free</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- box-1 end -->
+
+                    </div>
+                    <!-- box right end -->
+                </div>
+                <!-- prduct box part end -->
+
+
+            </div>
+        </section>
+        <!-- =================== Product section end here ==================== -->
+
+        <!-- =================== Client section Start here ==================== -->
+        <section class="client px-5 mt-8 md:px-0  pt-8">
+            <div class="container mx-auto">
+                <!--  section title start -->
+                <div
+                    class="fromHeadingText text-center flex flex-col justify-center items-center  border-t border-b border-dashed border-[#13131833] mb-10">
+                    <h2 class=" text-2xl sm:text-4xl font-extrabold text-[#131318] mt-8">Clients Question</h2>
+                    <p class="text-sm sm:text-base font-medium text-[#13131899] md:w-1/2 mb-8 mt-6">Addressing client
+                        queries is our priority. We strive to provide accurate information promptly, ensuring
+                        satisfaction in every interaction.</p>
+                </div>
+                <!--  section title end -->
+
+                <!-- bottom part start -->
+                <div
+                    class="Clientcontent py-8 px-8  rounded-2xl border border-[#1313181A] flex flex-col  lg:flex-row gap-10 ">
+                    <div class="imgDiv w-full lg:w-[40%]">
+                        <img src="img/question.png" alt="" class="w-full ">
+                    </div>
+                    <div class="accordionDiv w-full lg:w-[60%]">
+                        <div class="collapse collapse-plus bg-transparent border-b border-b-[#1313181A] lg:py-2  ">
+                            <input type="radio" name="my-accordion-3" checked="checked" />
+                            <div class="collapse-title text-xl font-medium">
+                                Our Equipment
+                            </div>
+                            <div class="collapse-content">
+                                <p
+                                    class="w-full sm:w-[90%] md:w-[70%] text-xs sm:text-base  font-normal text-[rgba(19, 19, 24, 0.60)]">
+                                    Premium
+                                    gym equipment for a complete workout, featuring
+                                    state-of-the-art machines and versatile free weights.</p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-plus bg-transparent border-b border-b-[#1313181A] lg:py-2">
+                            <input type="radio" name="my-accordion-3" />
+                            <div class="collapse-title text-xl font-medium">
+                                Hockey Training
+                            </div>
+                            <div class="collapse-content">
+                                <p
+                                    class="w-full sm:w-[90%] md:w-[70%] text-xs sm:text-base  font-normal text-[rgba(19, 19, 24, 0.60)]">
+                                    Elevate your game with cutting-edge hockey training, fostering skill
+                                    development and peak performance on the ice.</p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-plus bg-transparent border-b border-b-[#1313181A] lg:py-2">
+                            <input type="radio" name="my-accordion-3" />
+                            <div class="collapse-title text-xl font-medium">
+                                Private Lessons
+                            </div>
+                            <div class="collapse-content">
+                                <p
+                                    class="w-full sm:w-[90%] md:w-[70%]  text-xs sm:text-base  font-normal text-[rgba(19, 19, 24, 0.60)]">
+                                    Tailored private lessons for personalized growth, expert guidance in
+                                    a one-on-one setting to enhance your skills.</p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-plus bg-transparent border-b border-b-[#1313181A] lg:py-2">
+                            <input type="radio" name="my-accordion-3" />
+                            <div class="collapse-title text-xl font-medium">
+                                Ski Touring
+                            </div>
+                            <div class="collapse-content">
+                                <p
+                                    class="w-full sm:w-[90%] md:w-[70%] text-xs sm:text-base font-normal text-[rgba(19, 19, 24, 0.60)]">
+                                    Immerse in skit touring adventures, explore captivating landscapes,
+                                    and create unforgettable memories.</p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-plus bg-transparent border-b border-b-[#1313181A] lg:py-2">
+                            <input type="radio" name="my-accordion-3" />
+                            <div class="collapse-title text-xl font-medium">
+                                Booking
+                            </div>
+                            <div class="collapse-content">
+                                <p
+                                    class="w-full sm:w-[90%] md:w-[70%]  text-xs sm:text-base  font-normal text-[rgba(19, 19, 24, 0.60)]">
+                                    Seamless booking experience, secure your spot effortlessly, and
+                                    unlock exciting opportunities.</p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-plus bg-transparent border-b border-b-[#1313181A] lg:py-2">
+                            <input type="radio" name="my-accordion-3" />
+                            <div class="collapse-title text-xl font-medium">
+                                Pricings
+                            </div>
+                            <div class="collapse-content">
+                                <p
+                                    class="w-full sm:w-[90%] md:w-[70%]  text-xs sm:text-base  font-normal text-[rgba(19, 19, 24, 0.60)]">
+                                    Transparent pricing, offering value for every budget, ensuring
+                                    affordability without compromising on quality and service.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- bottom part end -->
+            </div>
+        </section>
+        <!-- =================== Client section end here ==================== -->
+
+
+        <!-- =================== Forn section Start here ==================== -->
+        <section class="Form mt-8 px-5 md:px-0 pt-8 ">
+            <div class="container mx-auto">
+                <!--  section title start -->
+                <div
+                    class="fromHeadingText text-center flex flex-col justify-center items-center  border-t border-b border-dashed border-[#13131833] mb-10">
+                    <h2 class="text-4xl font-extrabold text-[#131318] mt-8">Get In Touch</h2>
+                    <p class="text-base font-medium text-[rgba(19, 19, 24, 0.60)] md:w-1/2 mb-8 mt-6">Feel free to
+                        reach
+                        out
+                        through
+                        our
+                        website's contact form. Share your name, email, and
+                        message. Connect easily!</p>
+                </div>
+                <!--  section title end -->
+
+                <!-- Main Box start here -->
+                <div class="mainBox grid grid-cols-1 lg:grid-cols-3 bg-white pt-10 gap-6">
+
+                    <!-- info part start -->
+                    <div class="info p-7 flex flex-col items-start  rounded-2xl border border-[#13131833] space-y-3">
+
+                        <div class="BoxOne rounded-2xl bg-[#BCED6D1A] px-6 pt-6 pb-8  w-full">
+                            <img src="img/phone.png" alt="">
+                            <p class="text-[rgba(19, 19, 24, 0.40)] text-base font-normal mt-6">Phone Number : </p>
+                            <h4 class="text-[#131318] text-lg font-extrabold mt-2">(+62) 123-321-543</h4>
+                        </div>
+                        <div class="BoxOne rounded-2xl bg-[#BCED6D1A] px-6 pt-6 pb-8 w-full ">
+                            <img src="img/message.png" alt="">
+                            <p class="text-[rgba(19, 19, 24, 0.40)] text-base font-normal mt-6">Email : </p>
+                            <h4 class="text-[#131318] text-lg font-extrabold mt-2">hockeys@support.com</h4>
+                        </div>
+                        <div class="BoxOne rounded-2xl bg-[#629CF31A] px-6 pt-6 pb-8 w-full">
+                            <img src="img/map.png" alt="">
+                            <p class="text-[rgba(19, 19, 24, 0.40)] text-base font-normal mt-6">Location : </p>
+                            <h4 class="text-[#131318] text-lg font-extrabold mt-2">152/1 Mohakhali Wireless Gate</h4>
+                        </div>
+
+                    </div>
+                    <!-- info part end -->
+
+                    <!-- form part start -->
+                    <div class=" col-span-1 lg:col-span-2 FormPart">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                            <div class="space-y-3">
+                                <label class="text-xl font-bold text-[#131318]">Your Name</label>
+                                <input type="text" placeholder="Enter your full name"
+                                    class="input input-bordered w-full focus:outline-none border-[#13131833] py-7 pl-5 bg-[#13131808] rounded-xl placeholder: text-[rgba(19, 19, 24, 0.30)] font-normal text-base" />
+                            </div>
+                            <div class="space-y-3">
+                                <label class="text-xl font-bold text-[#131318]">Your Email</label>
+                                <input type="email" placeholder="Enter your email"
+                                    class="input input-bordered w-full focus:outline-none border-[#13131833]  py-7 pl-5 bg-[#13131808] rounded-xl placeholder: text-[rgba(19, 19, 24, 0.30)] font-normal text-base" />
+                            </div>
+                            <div class="space-y-3">
+                                <label class="text-xl font-bold text-[#131318]">Subject</label>
+                                <input type="text" placeholder="Enter your subject"
+                                    class="input input-bordered w-full focus:outline-none border-[#13131833]  py-7 pl-5 bg-[#13131808] rounded-xl placeholder: text-[rgba(19, 19, 24, 0.30)] font-normal text-base" />
+                            </div>
+                            <div class="space-y-3">
+                                <label class="text-xl font-bold text-[#131318]">Phone Number</label>
+                                <input type="number" placeholder="Enter your phone number"
+                                    class="input input-bordered w-full focus:outline-none border-[#13131833]  py-7 pl-5 bg-[#13131808] rounded-xl placeholder: text-[rgba(19, 19, 24, 0.30)] font-normal text-base" />
+                            </div>
+                            <div class="lg:col-span-2 space-y-3">
+                                <label class="text-xl font-bold text-[#131318]">Message</label>
+                                <textarea
+                                    class="textarea textarea-bordered w-full focus:outline-none border-[#13131833]  py-7 pl-5 bg-[#13131808] rounded-xl placeholder: text-[rgba(19, 19, 24, 0.30)] font-normal text-base"
+                                    placeholder="Write your message" rows="10"></textarea>
+                            </div>
+                            <div class="lg:col-span-2 space-y-3">
+                                <input type="submit" value="Send Message"
+                                    class="w-full text-xl font-bold py-4 text-center border border-[#FF4240]  bg-[#FF4240] text-white rounded-xl">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- form part end -->
+
+                    <!-- social icon start -->
+                    <div
+                        class="socialIcon bg-[#13131808] py-9 flex flex-col  justify-center items-center col-span-1 md:col-span-3 rounded-xl space-y-6 mt-5 ">
+                        <div>
+                            <h4 class="text-2xl font-extrabold text-[#131318]">Social Media</h4>
+                        </div>
+                        <div class="Icongroup space-x-9">
+                            <a href="#"><i class="fa-brands fa-twitter fa-beat" style="color: #131318;"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook-f fa-beat" style="color: #131318;"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram fa-beat" style="color: #131318;"></i></a>
+                            <a href="#"><i class="fa-brands fa-github fa-beat" style="color: #131318;"></i></a>
+                        </div>
+                    </div>
+                    <!-- social icon start -->
+
+                </div>
+                <!-- Main Box end here -->
+            </div>
+        </section>
+        <!-- =================== Forn section end here ==================== -->
+
+    </main>
+    <!-- =========================== Main Part End Here ============================================= -->
+
+
+    <!-- =========================== Footer Part Start Here ==========================================-->
+    <footer class="px-5 mt-8 md:px-0 py-8 bg-[#131318]">
+        <div class="container mx-auto">
+            <div class="main flex flex-wrap justify-center md:justify-normal items-start gap-10 md:gap-0 lg:flex-row  ">
+                <ul class=" sm:w-[50%] md:w-[40%] mb-4 md:mb-0 text-center sm:text-start">
+                    <h2 class="text-white text-3xl font-extrabold">Get In Touch</h2>
+                    <p class="text-base font-medium text-[#FFFFFF99] w-[17rem] mt-4 mb-5">Let's stay
+                        connected! Follow us on social media for the latest news and exclusive offers.</p>
+                    <li class="mb-2"><a href="mailto:hockeys@support.com"
+                            class="text-[#FFFFFF99] text-base font-medium hover:text-[#ff4240] duration-300"><i
+                                class="fa-light fa-envelope mr-3 text-lg align-middle "
+                                style="color: #ff4240;"></i>hockeys@support.com</a></li>
+                    <li><a href="tel:+123-321-543"
+                            class="text-[#FFFFFF99] text-base font-medium hover:text-[#ff4240] duration-300"><i
+                                class="fa-thin fa-phone mr-3 text-lg align-middle" style="color: #ff4240;"></i>(+62)
+                            123-321-543</a></li>
+                </ul>
+
+                <ul class=" sm:w-[25%] md:w-[20%]  text-center sm:text-start">
+                    <h2 class="text-white text-lg font-bold mb-7">Company</h2>
+                    <li class="text-base font-medium text-[#FFFFFF99] mb-2 "><a href="#"
+                            class="hover:text-[#ff4240] duration-300">About us</a>
+                    </li>
+                    <li class="text-base font-medium text-[#FFFFFF99] mb-2"><a href="#"
+                            class="hover:text-[#ff4240] duration-300">Leadership</a>
+                    </li>
+                    <li class="text-base font-medium text-[#FFFFFF99] mb-2"><a href="#"
+                            class="hover:text-[#ff4240] duration-300">Careers</a></li>
+                    <li class="text-base font-medium text-[#FFFFFF99] mb-2"><a href="#"
+                            class="hover:text-[#ff4240] duration-300">News &
+                            Article</a>
+                    </li>
+                    <li class="text-base font-medium text-[#FFFFFF99]"><a href="#"
+                            class="hover:text-[#ff4240] duration-300">Legal Notice</a></li>
+                </ul>
+
+                <ul class=" sm:w-[50%] md:w-[20%] text-center sm:text-start">
+                    <h2 class="text-white text-lg font-bold mb-7">Support</h2>
+                    <li class="text-base font-medium text-[#FFFFFF99] mb-2"><a href="#"
+                            class="hover:text-[#ff4240] duration-300">Help Center</a>
+                    </li>
+                    <li class="text-base font-medium text-[#FFFFFF99] mb-2"><a href="#"
+                            class="hover:text-[#ff4240] duration-300">FAQ</a>
+                    </li>
+                    <li class="text-base font-medium text-[#FFFFFF99] mb-2"><a href="#"
+                            class="hover:text-[#ff4240] duration-300">Ticket
+                            Support</a></li>
+                    <li class="text-base font-medium text-[#FFFFFF99] mb-2"><a href="#"
+                            class="hover:text-[#ff4240] duration-300">Contact Us</a>
+                    </li>
+
+                </ul>
+
+                <ul class="sm:w-[25%] md:w-[20%] text-center sm:text-start">
+                    <h2 class="text-white text-lg font-bold mb-7">Services</h2>
+                    <li class="text-base font-medium text-[#FFFFFF99] mb-2"><a href="#"
+                            class="hover:text-[#ff4240] duration-300">Academy</a>
+                    </li>
+                    <li class="text-base font-medium text-[#FFFFFF99] mb-2"><a href="#"
+                            class="hover:text-[#ff4240] duration-300">Group Lesson</a>
+                    </li>
+                    <li class="text-base font-medium text-[#FFFFFF99] mb-2"><a href="#"
+                            class="hover:text-[#ff4240] duration-300">Private
+                            Lesson</a></li>
+                    <li class="text-base font-medium text-[#FFFFFF99] mb-2"><a href="#"
+                            class="hover:text-[#ff4240] duration-300">Hockeys for
+                            kids</a>
+                    </li>
+                    <li class="text-base font-medium text-[#FFFFFF99]"><a href="#">Hockeys for Adult</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+    <!-- =========================== Footer Part End Here ==========================================-->
+</body>
+
+</html>
